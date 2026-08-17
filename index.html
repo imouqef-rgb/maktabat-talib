@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مكتبة الطالب المغربي</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            📚 مكتبة الطالب المغربي
+        </div>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#subjects">المواد</a>
+            <a href="#resources">الموارد</a>
+            <a href="#about">عن المشروع</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="badge">
+                    🇲🇦 تعليم مجاني للطلاب
+                </span>
+
+                <h1>
+                    كل ما تحتاجه للدراسة
+                    <span>في مكان واحد</span>
+                </h1>
+
+                <p>
+                    لايفات، دروس، ملخصات، تمارين وامتحانات
+                    منظمة بطريقة بسيطة وسهلة.
+                </p>
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="ابحث عن درس، مادة، تمرين..."
+                    >
+
+                    <button id="searchButton">
+                        🔎 بحث
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Subjects -->
+
+        <section class="section" id="subjects">
+
+            <div class="section-title">
+
+                <span>📚</span>
+
+                <div>
+                    <h2>المواد الدراسية</h2>
+                    <p>اختر المادة التي تريد دراستها</p>
+                </div>
+
+            </div>
+
+
+            <div class="subjects-grid">
+
+                <article class="subject-card searchable">
+
+                    <div class="icon physics">
+                        ⚛️
+                    </div>
+
+                    <h3>الفيزياء والكيمياء</h3>
+
+                    <p>
+                        دروس، لايفات، تمارين وامتحانات.
+                    </p>
+
+                    <button onclick="openSubject('الفيزياء والكيمياء')">
+                        استكشاف →
+                    </button>
+
+                </article>
+
+
+                <article class="subject-card searchable">
+
+                    <div class="icon math">
+                        📐
+                    </div>
+
+                    <h3>الرياضيات</h3>
+
+                    <p>
+                        دروس وتمارين وامتحانات.
+                    </p>
+
+                    <button onclick="openSubject('الرياضيات')">
+                        استكشاف →
+                    </button>
+
+                </article>
+
+
+                <article class="subject-card searchable">
+
+                    <div class="icon biology">
+                        🧬
+                    </div>
+
+                    <h3>علوم الحياة والأرض</h3>
+
+                    <p>
+                        ملخصات ودروس وتمارين.
+                    </p>
+
+                    <button onclick="openSubject('علوم الحياة والأرض')">
+                        استكشاف →
+                    </button>
+
+                </article>
+
+
+                <article class="subject-card searchable">
+
+                    <div class="icon french">
+                        🇫🇷
+                    </div>
+
+                    <h3>اللغة الفرنسية</h3>
+
+                    <p>
+                        دروس وموارد للمراجعة.
+                    </p>
+
+                    <button onclick="openSubject('اللغة الفرنسية')">
+                        استكشاف →
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resources -->
+
+        <section class="section resources" id="resources">
+
+            <div class="section-title">
+
+                <span>🎓</span>
+
+                <div>
+                    <h2>ماذا ستجد في المكتبة؟</h2>
+                    <p>كل الموارد التي يحتاجها الطالب</p>
+                </div>
+
+            </div>
+
+
+            <div class="resources-grid">
+
+                <article class="resource searchable">
+
+                    <div>🎥</div>
+
+                    <h3>اللايفات</h3>
+
+                    <p>
+                        الوصول إلى الدروس واللايفات المجانية
+                        من المصادر الأصلية.
+                    </p>
+
+                </article>
+
+
+                <article class="resource searchable">
+
+                    <div>📄</div>
+
+                    <h3>الملخصات</h3>
+
+                    <p>
+                        ملخصات منظمة تساعدك على المراجعة
+                        بسرعة.
+                    </p>
+
+                </article>
+
+
+                <article class="resource searchable">
+
+                    <div>✏️</div>
+
+                    <h3>التمارين</h3>
+
+                    <p>
+                        تمارين متدرجة لتطبيق ما تعلمته.
+                    </p>
+
+                </article>
+
+
+                <article class="resource searchable">
+
+                    <div>📝</div>
+
+                    <h3>الامتحانات</h3>
+
+                    <p>
+                        نماذج امتحانات للتدرب والاستعداد.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Latest -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <span>🔥</span>
+
+                <div>
+                    <h2>أحدث الموارد</h2>
+                    <p>آخر ما تمت إضافته إلى المكتبة</p>
+                </div>
+
+            </div>
+
+
+            <div class="latest-grid">
+
+                <article class="resource-card searchable">
+
+                    <span class="type live">
+                        🎥 لايف
+                    </span>
+
+                    <h3>
+                        مراجعة فيزياء - الأولى بكالوريا
+                    </h3>
+
+                    <p>
+                        درس ومراجعة مع الأستاذ.
+                    </p>
+
+                    <a
+                        href="https://www.youtube.com/"
+                        target="_blank"
+                    >
+                        مشاهدة المصدر →
+                    </a>
+
+                </article>
+
+
+                <article class="resource-card searchable">
+
+                    <span class="type summary">
+                        📄 ملخص
+                    </span>
+
+                    <h3>
+                        ملخص درس الحركة
+                    </h3>
+
+                    <p>
+                        أهم القوانين والمفاهيم.
+                    </p>
+
+                    <a href="#">
+                        فتح الملخص →
+                    </a>
+
+                </article>
+
+
+                <article class="resource-card searchable">
+
+                    <span class="type exercise">
+                        ✏️ تمارين
+                    </span>
+
+                    <h3>
+                        تمارين الحركة
+                    </h3>
+
+                    <p>
+                        تمارين متدرجة في الصعوبة.
+                    </p>
+
+                    <a href="#">
+                        فتح التمارين →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+
+        <section class="about" id="about">
+
+            <div>
+
+                <span class="badge">
+                    🌍 مشروع طلابي
+                </span>
+
+                <h2>
+                    المعرفة المجانية يجب أن تكون
+                    <span>متاحة للجميع.</span>
+                </h2>
+
+                <p>
+                    مكتبة الطالب المغربي مشروع يهدف إلى تنظيم
+                    الموارد التعليمية المجانية ومساعدة الطلاب
+                    على الوصول إليها بسهولة.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div>
+            <strong>📚 مكتبة الطالب المغربي</strong>
+
+            <p>
+                منصة تعليمية مجانية للطلاب.
+            </p>
+        </div>
+
+        <div>
+            <p>
+                © 2026 جميع الحقوق محفوظة
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+  </html>
